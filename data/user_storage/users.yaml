@@ -1,0 +1,25 @@
+usernames:
+  hai@hai.com:
+    address: "Th\xE1i Nguy\xEAn"
+    age: 51
+    email: hai@hai.com
+    gender: "N\u1EEF"
+    job: "GI\xE1o vi\xEAn"
+    name: "\u0110o\xE0n Thanh H\u1EA3i"
+    password: 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
+  te:
+    address: ''
+    age: 5
+    email: ''
+    gender: Nam
+    job: ''
+    name: ''
+    password: 5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5
+  test@test.com:
+    address: test@test.com
+    age: 5
+    email: test@test.com
+    gender: Nam
+    job: test@test.com
+    name: test@test.com
+    password: f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a

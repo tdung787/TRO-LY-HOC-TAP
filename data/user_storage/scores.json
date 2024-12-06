@@ -1,0 +1,46 @@
+[
+    {
+        "username": "test@test.com",
+        "Time": "2024-11-4 08:21:17",
+        "Score": "k\u00e9m",
+        "Content": {
+            "tri\u1ec7u ch\u1ee9ng": "M\u1ec7t m\u1ecfi, \u0111au \u0111\u1ea7u, \u00e1p l\u1ef1c, tr\u1ea7m c\u1ea3m",
+            "t\u00ecnh tr\u1ea1ng": "C\u1ea3m th\u1ea5y \u00e1p l\u1ef1c v\u00e0 tr\u1ea7m c\u1ea3m"
+        },
+        "Total guess": "C\u1ea3m th\u1ea5y \u00e1p l\u1ef1c v\u00e0 tr\u1ea7m c\u1ea3m"
+    },
+    {
+        "username": "test@test.com",
+        "Time": "2024-11-5 14:30:45",
+        "Score": "trung b\u00ecnh",
+        "Content": {
+            "tri\u1ec7u ch\u1ee9ng": "Lo \u00e2u, m\u1ea5t ng\u1ee7, m\u1ea5t h\u1ee9ng th\u00fa",
+            "t\u00ecnh tr\u1ea1ng": "C\u00f3 d\u1ea5u hi\u1ec7u lo \u00e2u v\u00e0 kh\u00f3 ng\u1ee7, m\u1ea5t h\u1ee9ng th\u00fa v\u1edbi c\u00e1c ho\u1ea1t \u0111\u1ed9ng th\u01b0\u1eddng ng\u00e0y"
+        },
+        "Total guess": "Lo \u00e2u v\u00e0 m\u1ea5t ng\u1ee7, c\u1ea7n quan t\u00e2m s\u1ee9c kh\u1ecfe tinh th\u1ea7n"
+    },
+    {
+        "username": "test@test.com",
+        "Time": "2024-11-9 9:30:45",
+        "Score": "k\u00e9m",
+        "Content": {
+            "tri\u1ec7u ch\u1ee9ng": "Lo \u00e2u, m\u1ea5t ng\u1ee7, m\u1ea5t h\u1ee9ng th\u00fa",
+            "t\u00ecnh tr\u1ea1ng": "C\u00f3 d\u1ea5u hi\u1ec7u lo \u00e2u v\u00e0 kh\u00f3 ng\u1ee7, m\u1ea5t h\u1ee9ng th\u00fa v\u1edbi c\u00e1c ho\u1ea1t \u0111\u1ed9ng th\u01b0\u1eddng ng\u00e0y"
+        },
+        "Total guess": "Lo \u00e2u v\u00e0 m\u1ea5t ng\u1ee7, c\u1ea7n quan t\u00e2m s\u1ee9c kh\u1ecfe tinh th\u1ea7n"
+    },
+    {
+        "username": "test@test.com",
+        "Time": "2024-11-12 15:45:32",
+        "Score": "trung b\u00ecnh",
+        "Content": "Ng\u01b0\u1eddi d\u00f9ng c\u1ea3m th\u1ea5y tr\u1ea7m c\u1ea3m v\u00e0 bu\u1ed3n b\u00e3. Th\u1eddi gian: 2024-11-12 15:45:28.",
+        "Total guess": "C\u1ea3m x\u00fac tr\u1ea7m c\u1ea3m th\u01b0\u1eddng bi\u1ec3u hi\u1ec7n qua c\u1ea3m gi\u00e1c bu\u1ed3n b\u00e3 ho\u1eb7c tr\u1ed1ng r\u1ed7ng, c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c nh\u1eadn bi\u1ebft b\u1edfi ch\u00ednh ng\u01b0\u1eddi c\u1ea3m th\u1ea5y ho\u1eb7c \u0111\u01b0\u1ee3c quan s\u00e1t b\u1edfi ng\u01b0\u1eddi kh\u00e1c. Ng\u01b0\u1eddi tr\u1ea3i qua c\u1ea3m gi\u00e1c n\u00e0y c\u00f3 th\u1ec3 gi\u1ea3m \u0111\u00e1ng k\u1ec3 s\u1ef1 quan t\u00e2m v\u00e0 h\u1ee9ng th\u00fa \u0111\u1ed1i v\u1edbi c\u00e1c ho\u1ea1t \u0111\u1ed9ng h\u00e0ng ng\u00e0y, d\u1eabn \u0111\u1ebfn vi\u1ec7c kh\u00f4ng c\u00f2n th\u00edch th\u00fa v\u1edbi nh\u1eefng \u0111i\u1ec1u m\u00e0 tr\u01b0\u1edbc \u0111\u00e2y h\u1ecd t\u1eebng y\u00eau th\u00edch."
+    },
+    {
+        "username": "test@test.com",
+        "Time": "2024-11-12 15:47:32",
+        "Score": "trung b\u00ecnh",
+        "Content": "Ng\u01b0\u1eddi d\u00f9ng c\u1ea3m th\u1ea5y m\u1ec7t m\u1ecfi v\u00e0 ch\u00e1n \u0111\u1eddi, c\u00f3 th\u1ec3 l\u00e0 tri\u1ec7u ch\u1ee9ng c\u1ee7a r\u1ed1i lo\u1ea1n tr\u1ea7m c\u1ea3m.",
+        "Total guess": "R\u1ed1i lo\u1ea1n tr\u1ea7m c\u1ea3m"
+    }
+]
