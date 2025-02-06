@@ -27,9 +27,9 @@ def main():
         with col1:  
             if st.button("💬 Trò chuyện với trợ lý"):
                     st.switch_page("pages/2_💬_Trò chuyện với trợ lý.py")
-        # with col2:
-        #     if st.button("📊 Thông tin sức khỏe"):
-        #             st.switch_page("pages/1_ 📈_Thông tin sức khỏe.py")       
+        with col2:
+            if st.button("📊 Thông tin sức khỏe"):
+                    st.switch_page("pages/1_ 📈_Thông tin sức khỏe.py")       
         with col3:
                 # st.session_state.conversation_file = create_new_chat_file(username)
             if st.button('🔴 Đăng xuất'):

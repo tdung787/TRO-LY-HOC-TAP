@@ -35,10 +35,10 @@ def tutorial():
     st.sidebar.markdown('4. 📊 **Lịch sử trò chuyện của bạn sẽ được lưu lại.**')
 
 def main_tutorial():
-    st.markdown('### 🧠Khám phá AI trợ lý học tập và giảng dạy môn Sinh học theo chương trình GDPT 2018 ###')
+    st.markdown('### 🧠Khám phá AI trợ lý học tập và giảng dạy môn Toán theo chương trình GDPT 2018 ###')
     st.markdown('***Hướng dẫn sử dụng giúp giáo viên và học sinh nâng cao hiệu quả học tập và giảng dạy:***')
     st.markdown('1. 🟢 **Cá nhân hóa: Đăng nhập để lưu lịch sử trò chuyện, giúp bạn dễ dàng theo dõi tiến trình học tập.**')
-    st.markdown('2. 🍀 **Tương tác thông minh: Sử dụng chức năng chat để nhận hỗ trợ từ AI khi gặp khó khăn trong học tập hoặc giảng dạy Sinh học.**')
+    st.markdown('2. 🍀 **Tương tác thông minh: Sử dụng chức năng chat để nhận hỗ trợ từ AI khi gặp khó khăn trong học tập hoặc giảng dạy Toán.**')
     st.markdown('3. 📊 **Phân tích và giải pháp: AI dựa vào thông tin bạn cung cấp để đưa ra các phương pháp giải quyết bài tập và vấn đề giảng dạy.**')
     st.markdown('4. 💾 **Lưu trữ tiện lợi: Lịch sử trò chuyện được lưu lại, giúp bạn dễ dàng ôn tập và xem lại nội dung quan trọng.**')
 

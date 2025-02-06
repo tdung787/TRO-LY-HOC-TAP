@@ -50,6 +50,16 @@ def save_chat_history(chat_store, conversation_file, username=None):
     timestamp = datetime.now().strftime("%H%M%S")
     chat_title = generate_chat_title(user_messages)
 
+    # Thay thế ký tự LaTeX trong tin nhắn của cả người dùng và trợ lý
+    for msg in user_messages:
+        msg["content"] = (
+            msg["content"]
+            .replace("\\[", "$$")  # Chuyển \[ thành $$
+            .replace("\\]", "$$")  # Chuyển \] thành $$
+            .replace("\\(", "$")   # Chuyển \( thành $
+            .replace("\\)", "$")   # Chuyển \) thành $
+        )
+
     # Tạo tên tệp mới với định dạng username_chatTitle_timestamp.json
     new_conversation_file = f"data/cache/{username}_{chat_title}_{timestamp}.json"
 
@@ -138,6 +148,7 @@ def save_score(score, content, total_guess, username):
         # Ghi dữ liệu trở lại file
         with open(SCORES_FILE, "w") as f:
             json.dump(data, f, indent=4)
+            
 
 def initialize_chatbot(chat_store, container, username, user_info):
     """Khởi tạo chatbot với bộ nhớ và công cụ cần thiết."""
@@ -160,7 +171,7 @@ def initialize_chatbot(chat_store, container, username, user_info):
         metadata=ToolMetadata(
             name="query",
             description=(
-                "Cung cấp các câu hỏi và câu trả lời hay đáp án của môn sinh học."
+                "Cung cấp các câu hỏi và câu trả lời hay đáp án của môn toán."
             ),
         )
     )
@@ -174,6 +185,7 @@ def initialize_chatbot(chat_store, container, username, user_info):
     display_messages(chat_store, container, key=username)
     return agent
 
+
 def chat_interface(agent, chat_store, container, conversation_file):  
     """Quản lý giao diện trò chuyện và lưu lại khi kết thúc."""
     if not os.path.exists(conversation_file) or os.path.getsize(conversation_file) == 0:
@@ -183,15 +195,24 @@ def chat_interface(agent, chat_store, container, conversation_file):
 
     prompt = st.chat_input("Chat với AI...")
     if prompt:
-        # Người dùng đã gửi tin nhắn, trả về True để cập nhật trạng thái
         with container:
             with st.chat_message(name="user", avatar=user_avatar):
                 st.markdown(prompt)
+
+            # Lấy phản hồi từ OpenAI
             response = str(agent.chat(prompt))
+
+            # Chuyển đổi cú pháp LaTeX từ OpenAI sang Streamlit
+            response = (
+                response.replace("\\[", "$$")  # Chuyển \[ thành $$
+                        .replace("\\]", "$$")  # Chuyển \] thành $$
+                        .replace("\\(", "$")   # Chuyển \( thành $
+                        .replace("\\)", "$")   # Chuyển \) thành $
+            )
+
             with st.chat_message(name="assistant", avatar=firefox_avatar):
                 st.markdown(response)
-        # Lưu cuộc trò chuyện vào tệp
-        chat_store.persist(conversation_file)
 
-        return True  # Trả về True khi có tin nhắn được gửi
-    return False  # Trả về False nếu không có tin nhắn nào được gửi
+        chat_store.persist(conversation_file)
+        return True 
+    return False 
